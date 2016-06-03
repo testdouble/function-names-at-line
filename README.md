@@ -24,7 +24,7 @@ var functionNamesAtLine = require('function-names-at-line')
 functionNamesAtLine(someSource, 1) // []
 functionNamesAtLine(someSource, 2) // ['foo']
 functionNamesAtLine(someSource, 3) // ['foo']
-functionNamesAtLine(someSource, 4) // ['baz', 'foo']
+functionNamesAtLine(someSource, 4) // ['bar', 'foo']
 functionNamesAtLine(someSource, 5) // ['foo']
 functionNamesAtLine(someSource, 6) // []
 ```
