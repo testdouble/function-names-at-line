@@ -1,0 +1,36 @@
+{
+  "name": "function-names-at-line",
+  "version": "1.0.0",
+  "description": "Name the functions found at a particular line number in some JavaScript source",
+  "main": "index.js",
+  "scripts": {
+    "ci": "npm test && npm run style",
+    "test": "teenytest **/*.test.js --helper test/helper.js",
+    "test:debug": "node-debug ./node_modules/.bin/teenytest **/*.test.js --helper test/helper.js",
+    "style": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testdouble/function-names-at-line.git"
+  },
+  "keywords": [
+    "line",
+    "numbers",
+    "function",
+    "names"
+  ],
+  "author": "Justin Searls <searls@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/testdouble/function-names-at-line/issues"
+  },
+  "homepage": "https://github.com/testdouble/function-names-at-line#readme",
+  "dependencies": {
+    "acorn": "^3.1.0"
+  },
+  "devDependencies": {
+    "lodash": "^4.13.1",
+    "standard": "^7.1.1",
+    "teenytest": "^3.1.0"
+  }
+}
