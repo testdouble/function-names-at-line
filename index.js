@@ -29,7 +29,7 @@ function functionNamesAtLineNumber (ast, lineNumber) {
         } else if (parentNode.type === 'AssignmentExpression') {
           if (parentNode.left.type === 'MemberExpression') {
             names.push(nameFor(parentNode.left.property))
-          } else if(parentNode.left.type === 'Identifier') {
+          } else if (parentNode.left.type === 'Identifier') {
             names.push(nameFor(parentNode.left))
           }
         } else if (parentNode.type === 'VariableDeclarator') {

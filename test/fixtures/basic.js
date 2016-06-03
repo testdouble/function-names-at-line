@@ -28,10 +28,12 @@ var i = function () {
 }
 
 function j () {
-  function k () {
+  (function k () {
     // yip
-  }
+  })()
 }
 
 var l
 l = function m () {}
+
+g + i + j + l
