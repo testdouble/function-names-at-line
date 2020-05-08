@@ -26,11 +26,12 @@
   },
   "homepage": "https://github.com/testdouble/function-names-at-line#readme",
   "dependencies": {
-    "acorn": "^3.1.0"
+    "acorn": "^7.1.1",
+    "acorn-walk": "^7.1.1"
   },
   "devDependencies": {
-    "lodash": "^4.13.1",
-    "standard": "^7.1.1",
+    "lodash": "^4.17.15",
+    "standard": "^14.3.3",
     "teenytest": "^3.1.0"
   }
 }

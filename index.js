@@ -1,8 +1,8 @@
 var acorn = require('acorn')
-var walk = require('acorn/dist/walk')
+var walk = require('acorn-walk')
 
 module.exports = function (source, lineNumber) {
-  var ast = acorn.parse(source, {locations: true})
+  var ast = acorn.parse(source, {locations: true, sourceType: 'module'})
   return functionNamesAtLineNumber(ast, lineNumber)
 }
 
