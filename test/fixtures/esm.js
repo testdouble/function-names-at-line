@@ -3,7 +3,7 @@ export default {
   a: function () {
     // ooh!
   },
-  'b': function z () {
+  b: function z () {
     // ahh!
   },
   c: function () { /* wow */ }
@@ -17,7 +17,7 @@ function e () {
   // Woo
 }
 
-module.exports['f'] = e
+module.exports.f = e
 
 var g = function h () {
   // yup

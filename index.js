@@ -2,7 +2,7 @@ var acorn = require('acorn')
 var walk = require('acorn-walk')
 
 module.exports = function (source, lineNumber) {
-  var ast = acorn.parse(source, {locations: true, sourceType: 'module'})
+  var ast = acorn.parse(source, { locations: true, sourceType: 'module' })
   return functionNamesAtLineNumber(ast, lineNumber)
 }
 
@@ -14,12 +14,12 @@ function functionNamesAtLineNumber (ast, lineNumber) {
   var names = []
 
   walk.ancestor(ast, {
-    'FunctionDeclaration': function (node, ancestors) {
+    FunctionDeclaration: function (node, ancestors) {
       if (isNodeBetweenLines(node, lineNumber)) {
         names.push(nameFor(node.id))
       }
     },
-    'FunctionExpression': function (node, ancestors) {
+    FunctionExpression: function (node, ancestors) {
       if (isNodeBetweenLines(node, lineNumber)) {
         if (node.id) names.push(nameFor(node.id))
 

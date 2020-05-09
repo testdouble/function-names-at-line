@@ -49,7 +49,7 @@ module.exports = function () {
     var result = subject(source, parseInt(lineNumber, 10))
 
     try {
-      assert.deepEqual(result, expected)
+      assert.deepStrictEqual(result, expected)
     } catch (e) {
       console.error('Assertion for line ' + lineNumber + ' failed!')
       throw e
